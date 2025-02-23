@@ -35,6 +35,6 @@ I research machine learning models that can be
 
 given the pressing needs for trustworthy machine-learning systems, in contexts of powerful *multi-modal Foundation Models* emerging nowadays.
 
-I obtained my Ph.D. and Master's degrees from The University of New South Wales, feeling fortunate to be supervised by Prof. [Lina Yao](https://www.linayao.com), where I studied uncertainty-aware and sample-efficient human-centric perceptation and understanding with limited well-annotated data.
+I obtained my Ph.D. and Master's degrees from The University of New South Wales, feeling fortunate to be supervised by Prof. [Lina Yao](https://www.linayao.com), where I studied uncertainty-aware and sample-efficient human-centric understanding with limited well-annotated data.
 Our research outcomes spanned multiple real-world application, such as Recommender Systems, Brain-Computer Interface, and Human Movement Predictions.
 I did my undergraduate study at Southwest Jiaotong University.
