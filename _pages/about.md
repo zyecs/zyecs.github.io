@@ -28,8 +28,8 @@ latest_posts:
 
 Greetings. I am currently a Postdoctoral Research Fellow at [Trustworthy Machine Learning and Reasoning Group](https://github.com/tmlr-group), [School of Computing and Information Systems](https://cis.unimelb.edu.au/), The University of Melbourne, working with Dr. [Feng Liu](https://fengliu90.github.io/).
 
-I research machine learning models that can be
-- **robust** to distribution shifts
+I research machine learning models that are
+- **robust** against distribution shifts
 - **efficient** during deployment and adaptation for new tasks
 - **safe** in terms of adversarial attack and privacy breach
 
