@@ -23,22 +23,22 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "dropdown-publications",
-              title: "publications",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "";
-              },
-            },{id: "dropdown-services",
+        },{id: "nav-supervision-amp-mentorship",
+          title: "supervision &amp; mentorship",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/supervision/";
+          },
+        },{id: "dropdown-services",
               title: "services",
               description: "",
               section: "Dropdown",
               handler: () => {
                 window.location.href = "";
               },
-            },{id: "dropdown-awards",
-              title: "awards",
+            },{id: "dropdown-talks-amp-awards",
+              title: "talks &amp; awards",
               description: "",
               section: "Dropdown",
               handler: () => {
