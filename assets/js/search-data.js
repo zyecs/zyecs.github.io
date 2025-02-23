@@ -23,8 +23,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "nav-supervision-amp-mentorship",
-          title: "supervision &amp; mentorship",
+        },{id: "nav-supervision",
+          title: "supervision",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -66,17 +66,17 @@ ninja.data = [{
           window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
         
       },
-    },{id: "news-we-have-1-paper-on-model-reprogramming-accepted-by-neurips-2024-with-oral-presentation",
-          title: 'We have 1 paper on Model Reprogramming accepted by NeurIPS 2024 with Oral...',
+    },{id: "news-we-have-1-paper-on-model-reprogramming-accepted-by-neurips-2024-as-oral-presentation",
+          title: 'We have 1 paper on Model Reprogramming accepted by NeurIPS 2024 as Oral...',
           description: "",
-          section: "News",},{id: "news-our-latest-finding-on-cross-domain-recommendation-following-our-sigir-24-paper-is-now-on-preprint",
-          title: 'Our latest finding on Cross-domain Recommendation, following our SIGIR’24 paper, is now on...',
+          section: "News",},{id: "news-our-latest-finding-of-cross-domain-recommendation-following-our-sigir-2024-paper-is-now-in-preprint",
+          title: 'Our latest finding of Cross-Domain Recommendation, following our SIGIR 2024 paper, is now...',
           description: "",
           section: "News",},{id: "news-we-have-1-paper-on-model-reprogramming-accepted-by-iclr-2025",
-          title: 'We have 1 paper on Model Reprogramming accepted by ICLR 2025',
+          title: 'We have 1 paper on Model Reprogramming accepted by ICLR 2025.',
           description: "",
-          section: "News",},{id: "news-our-latest-finding-on-membership-inference-attack-of-generative-models-is-now-on-preprint",
-          title: 'Our latest finding on Membership Inference Attack of Generative Models, is now on...',
+          section: "News",},{id: "news-our-latest-finding-of-membership-inference-attack-for-generative-models-is-now-in-preprint",
+          title: 'Our latest finding of Membership Inference Attack for Generative Models, is now in...',
           description: "",
           section: "News",},{id: "news-we-will-present-a-tutorial-on-neural-network-reprogrammability-at-dasfaa-2025",
           title: 'We will present a tutorial on Neural Network Reprogrammability at DASFAA 2025.',
