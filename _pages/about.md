@@ -2,15 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href='#'>University of Melbourne</a>. Melbourne Connect (Building 290), University of Melbourne, VIC 3010, Australia.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: zesheng.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Melbourne Connect (Building 290)</p>
-    <p>University of Melbourne, VIC 3010, Australia</p>
+  # more_info: >
+  #   <p>Melbourne Connect (Building 290)</p>
+  #   <p>University of Melbourne, VIC 3010, Australia</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
