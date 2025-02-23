@@ -6,7 +6,7 @@ inline: true
 related_posts: false
 ---
 
-We have 1 [paper](https://openreview.net/forum?id=j964C6y92q) on *Model Reprogramming* accepted by [ICLR 2025](https://iclr.cc/)
+We have 1 [paper](https://openreview.net/forum?id=j964C6y92q) on *Model Reprogramming* accepted by [ICLR 2025](https://iclr.cc/).
 
 <!-- Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
 

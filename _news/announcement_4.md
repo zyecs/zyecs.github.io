@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our latest finding on *Membership Inference Attack of Generative Models*, is now on [preprint](https://arxiv.org/abs/2502.02970).
+Our latest finding of *Membership Inference Attack for Generative Models*, is now in [preprint](https://arxiv.org/abs/2502.02970).

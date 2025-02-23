@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our latest finding on *Cross-domain Recommendation*, following our [SIGIR'24 paper](https://dl.acm.org/doi/10.1145/3626772.3657758), is now on [preprint](https://arxiv.org/abs/2411.17361).
+Our latest finding of *Cross-Domain Recommendation*, following our [SIGIR 2024 paper](https://dl.acm.org/doi/10.1145/3626772.3657758), is now in [preprint](https://arxiv.org/abs/2411.17361).

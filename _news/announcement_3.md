@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We have 1 [paper](https://openreview.net/pdf?id=135eKqDoRR) on *Model Reprogramming* accepted by [NeurIPS 2024](https://nips.cc) with [**Oral** presentation](https://nips.cc/virtual/2024/oral/98002).
+We have 1 [paper](https://openreview.net/pdf?id=135eKqDoRR) on *Model Reprogramming* accepted by [NeurIPS 2024](https://nips.cc) as [**Oral** presentation](https://nips.cc/virtual/2024/oral/98002).
