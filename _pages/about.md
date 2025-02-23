@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>University of Melbourne</a>. Melbourne Connect (Building 290), University of Melbourne, VIC 3010, Australia.
+subtitle: <a href='https://www.unimelb.edu.au/'>University of Melbourne</a>. Melbourne Connect (Building 290), University of Melbourne, VIC 3010, Australia.
 
 profile:
   align: right
@@ -21,7 +21,7 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
@@ -37,6 +37,4 @@ given the pressing needs for trustworthy machine-learning systems, in contexts o
 
 I obtained my Ph.D. and Master's degrees from The University of New South Wales, feeling fortunate to be supervised by Prof. [Lina Yao](https://www.linayao.com), where I studied uncertainty-aware and sample-efficient human-centric perceptation and understanding with limited well-annotated data.
 Our research outcomes spanned multiple real-world application, such as Recommender Systems, Brain-Computer Interface, and Human Movement Predictions.
-I did my Bachelor's studies at Southwest Jiaotong University.
-
-
+I did my undergraduate study at Southwest Jiaotong University.

@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-02-14 07:59:00-0400
+date: 2024-09-26 16:11:00-0400
 inline: true
 related_posts: false
 ---
 
-We will present a tutorial on *Neural Network Reprogrammability* at DASFAA 2025.
+We have 1 [paper](https://openreview.net/pdf?id=135eKqDoRR) on *Model Reprogramming* accepted by [NeurIPS 2024](https://nips.cc) with [**Oral** presentation](https://nips.cc/virtual/2024/oral/98002).
