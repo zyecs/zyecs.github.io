@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications | Zesheng Ye</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .btn-expand-detail {
+      font-size: 0.8rem; font-family: inherit; color: var(--accent);
+      background: none; border: none; cursor: pointer; padding: 0; margin-left: 0.3rem;
+    }
+    .btn-expand-detail:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="publications.html" class="active">Research</a>
+    <a href="advising.html">Advising</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="services.html">Services</a>
+    <a href="grants.html">Grants &amp; Awards</a>
+  </nav>
+
+  <section>
+    <h2 class="section-title">Research</h2>
+    <div class="research-grid" id="research-grid">
+
+      <div class="research-card" data-topic="prediction">
+        <h3>Reliable Model Prediction</h3>
+        <p>Knowing what models don't know under data scarcity.</p>
+      </div>
+
+      <div class="research-card" data-topic="adaptation">
+        <h3>Reliable Model Adaptation</h3>
+        <p>Reusing foundation models for new tasks effectively.</p>
+      </div>
+
+      <div class="research-card" data-topic="evaluation">
+        <h3>Reliable Model Evaluation</h3>
+        <p>Certifying performance and safety claims of deployed models.</p>
+      </div>
+
+      <div class="research-card" data-topic="application">
+        <h3>Applications</h3>
+        <p>Real-world use cases where ML reliability matters.</p>
+      </div>
+
+    </div>
+    <p class="research-hint">Click a card to filter publications by topic.</p>
+
+    <div class="research-details" style="margin-top:1.8rem; font-size:15px; color:#333; line-height:1.7;">
+
+      <div class="research-detail" data-detail="prediction">
+        <p>
+          <strong>Reliable Model Prediction.</strong>
+          <button class="btn-expand-detail" onclick="toggleDetail('prediction')">Read more &#8595;</button>
+        </p>
+        <div class="detail-body" id="detail-prediction" style="display:none; margin-top:0.3rem;">
+          Models trained on small datasets tend to be quietly overconfident, but commit to one answer
+          when several are equally plausible. I work on probabilistic meta-learning approaches that retain
+          meaningful uncertainty in their predictions, giving downstream users an honest signal of
+          when to rely on a model and when to seek additional evidence.
+        </div>
+      </div>
+
+      <div class="research-detail" data-detail="adaptation" style="margin-top:0.8rem;">
+        <p>
+          <strong>Reliable Model Adaptation.</strong>
+          <button class="btn-expand-detail" onclick="toggleDetail('adaptation')">Read more &#8595;</button>
+        </p>
+        <div class="detail-body" id="detail-adaptation" style="display:none; margin-top:0.3rem;">
+          Repurposing a foundation model for a new task usually involves ad-hoc choices (a hand-picked prompt,
+          an arbitrary label mapping) with little understanding of why one configuration works and another does not.
+          I study Neural Network Reprogrammability, hoping to reveal and exploit the latent
+          compatibility between a frozen model and a target task, replacing guesswork with informed design.
+        </div>
+      </div>
+
+      <div class="research-detail" data-detail="evaluation" style="margin-top:0.8rem;">
+        <p>
+          <strong>Reliable Model Evaluation.</strong>
+          <button class="btn-expand-detail" onclick="toggleDetail('evaluation')">Read more &#8595;</button>
+        </p>
+        <div class="detail-body" id="detail-evaluation" style="display:none; margin-top:0.3rem;">
+          A model in production often carries implicit claims about robustness, data provenance,
+          and evaluation coverage that nobody has actually checked. I build tools that make these
+          claims auditable: benchmarks that expose hidden trade-offs in model compression, statistical
+          frameworks that detect unauthorised data usage, and evaluation methods that deliver
+          trustworthy conclusions without exhaustive testing.
+        </div>
+      </div>
+
+      <div class="research-detail" data-detail="application" style="margin-top:0.8rem;">
+        <p>
+          <strong>Applications.</strong>
+          <button class="btn-expand-detail" onclick="toggleDetail('application')">Read more &#8595;</button>
+        </p>
+        <div class="detail-body" id="detail-application" style="display:none; margin-top:0.3rem;">
+          The methods above are motivated by, and tested in, settings where getting reliability wrong has
+          real cost. These range from recommendation systems that must handle cold-start users, to brain-computer
+          interfaces that demand robust signal decoding, to trajectory forecasting where overconfident predictions
+          can compromise safety. Each application sharpens the methods as much as it benefits from them.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2 class="section-title">Publications</h2>
+
+    <div class="pub-controls">
+      <span class="pub-filter-label" id="filter-label">Showing selected publications</span>
+      <button class="btn-clear" id="btn-clear" onclick="clearFilter()">&#10005; Show all topics</button>
+    </div>
+
+    <ul class="pub-list" id="pub-list">
+
+      <!-- === 2026 === -->
+
+      <li class="pub" data-topics="adaptation">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://openreview.net/forum?id=AScQDQqVXY">CARPRT: Class-Aware Zero-Shot Prompt Reweighting for Vision-Language Model</a></div>
+          <div class="pub-authors">Ruijiang Dong*, <strong>Zesheng Ye*</strong>, Feng Liu, Jianzhong Qi, Lei Feng, Gang Niu, Masashi Sugiyama</div>
+          <div class="pub-venue">International Conference on Learning Representations (ICLR), 2026</div>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <li class="pub extra" data-topics="adaptation">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://openreview.net/forum?id=ZmbkzZnHO4">Let's Roll a BiFTA: Bi-refinement for Fine-grained Text-visual Alignment in Vision-Language Models</a></div>
+          <div class="pub-authors">Yuhao Sun, Chengyi Cai, Jiacheng Zhang, <strong>Zesheng Ye</strong>, Xingliang Yuan, Feng Liu</div>
+          <div class="pub-venue">Transactions on Machine Learning Research (TMLR), 2026</div>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <li class="pub extra" data-topics="evaluation">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://openreview.net/pdf?id=JEQaXgigtu">Combating Data Laundering in LLM Training</a></div>
+          <div class="pub-authors">Muxing Li*, <strong>Zesheng Ye*</strong>, Sharon Li, Feng Liu</div>
+          <div class="pub-venue">ICLR Data-FM Workshop, 2026</div>
+          <span class="pub-badge badge-workshop">Workshop</span>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <li class="pub extra" data-topics="adaptation">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://arxiv.org/abs/2506.04650">Neural Network Reprogrammability: A Unified Theme on Model Reprogramming, Prompt Tuning, and Prompt Instruction</a></div>
+          <div class="pub-authors"><strong>Zesheng Ye*</strong>, Chengyi Cai*, Ruijiang Dong*, Jianzhong Qi, Lei Feng, Pin-Yu Chen, Feng Liu</div>
+          <div class="pub-venue">Preprint, 2026</div>
+          <span class="pub-badge badge-preprint">Preprint</span>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <li class="pub extra" data-topics="adaptation">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://arxiv.org/abs/2601.22020">Visual-Guided Key-Token Regularization for Multimodal Large Language Model Unlearning</a></div>
+          <div class="pub-authors">Chengyi Cai, <strong>Zesheng Ye</strong>, Peike Li, Bo Han, Jianzhong Qi, Feng Liu</div>
+          <div class="pub-venue">Preprint, 2026</div>
+          <span class="pub-badge badge-preprint">Preprint</span>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <li class="pub extra" data-topics="prediction application">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="#">User-Aware Conditional Generative Total Correlation Learning for Multi-Modal Recommendation</a></div>
+          <div class="pub-authors">Jing Du*, <strong>Zesheng Ye*</strong>, Congbo Ma, Feng Liu, Flora D. Salim</div>
+          <div class="pub-venue">Preprint, 2026</div>
+          <span class="pub-badge badge-preprint">Preprint</span>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <!-- === 2025 === -->
+
+      <li class="pub" data-topics="evaluation">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://openreview.net/forum?id=6nbcwJVZNy">Sample-Specific Noise Injection for Diffusion-Based Adversarial Purification</a></div>
+          <div class="pub-authors">Yuhao Sun*, Jiacheng Zhang*, <strong>Zesheng Ye*</strong>, Chaowei Xiao, Feng Liu</div>
+          <div class="pub-venue">International Conference on Machine Learning (ICML), 2025</div>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <li class="pub extra" data-topics="adaptation">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://openreview.net/forum?id=Ne5brB1tKN&amp;noteId=c4wjXKNtyW">Understanding Model Reprogramming for CLIP via Decoupling Visual Prompts</a></div>
+          <div class="pub-authors">Chengyi Cai*, <strong>Zesheng Ye*</strong>, Lei Feng, Jianzhong Qi, Feng Liu</div>
+          <div class="pub-venue">International Conference on Machine Learning (ICML), 2025</div>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <li class="pub extra" data-topics="adaptation">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://openreview.net/forum?id=j964C6y92q">Attribute-based Visual Reprogramming for Vision-Language Models</a></div>
+          <div class="pub-authors">Chengyi Cai, <strong>Zesheng Ye</strong>, Lei Feng, Jianzhong Qi, Feng Liu</div>
+          <div class="pub-venue">International Conference on Learning Representations (ICLR), 2025</div>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <li class="pub extra" data-topics="evaluation">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://arxiv.org/pdf/2502.02970">Distributional Statistics Restore Training Data Auditability in One-step Distilled Diffusion Models</a></div>
+          <div class="pub-authors">Muxing Li*, <strong>Zesheng Ye*</strong>, Sharon Li, Andy Song, Guangquan Zhang, Feng Liu</div>
+          <div class="pub-venue">ICML R2-FM Workshop, 2025</div>
+          <span class="pub-badge badge-workshop">Workshop</span>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <li class="pub extra" data-topics="adaptation">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://arxiv.org/abs/2601.22030v1">Per-parameter Task Arithmetic for Unlearning in Large Language Models</a></div>
+          <div class="pub-authors">Chengyi Cai, <strong>Zesheng Ye</strong>, Jiangchao Yao, Jianzhong Qi, Bo Han, Xiaolu Zhang, Feng Liu, Jun Zhou</div>
+          <div class="pub-venue">Preprint, 2025</div>
+          <span class="pub-badge badge-preprint">Preprint</span>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <!-- === 2024 === -->
+
+      <li class="pub" data-topics="adaptation">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://openreview.net/forum?id=135eKqDoRR">Bayesian-guided Label Mapping for Visual Reprogramming</a></div>
+          <div class="pub-authors">Chengyi Cai, <strong>Zesheng Ye</strong>, Lei Feng, Jianzhong Qi, Feng Liu</div>
+          <div class="pub-venue">Advances in Neural Information Processing Systems (NeurIPS), 2024</div>
+          <span class="pub-badge badge-oral">Oral</span>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <li class="pub" data-topics="adaptation">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://openreview.net/forum?id=4sikyurTLX">Sample-specific Masks for Visual Reprogramming-based Prompting</a></div>
+          <div class="pub-authors">Chengyi Cai, <strong>Zesheng Ye</strong>, Lei Feng, Jianzhong Qi, Feng Liu</div>
+          <div class="pub-venue">International Conference on Machine Learning (ICML), 2024</div>
+          <span class="pub-badge badge-spotlight">Spotlight</span>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <li class="pub extra" data-topics="prediction application">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3626772.3657758">Identifiability of Cross-Domain Recommendation via Causal Subspace Disentanglement</a></div>
+          <div class="pub-authors">Jing Du*, <strong>Zesheng Ye*</strong>, Bin Guo, Zhiwen Yu, Lina Yao</div>
+          <div class="pub-venue">International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR), 2024</div>
+          <span class="pub-badge badge-oral">Oral</span>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <li class="pub extra" data-topics="prediction application">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://doi.org/10.1016/j.knosys.2024.111862">Uncertainty-aware Pedestrian Trajectory Prediction via Distributional Diffusion</a></div>
+          <div class="pub-authors">Yao Liu*, <strong>Zesheng Ye*</strong>, Binghao Li, Sylvia Gustin</div>
+          <div class="pub-venue">Knowledge-Based Systems (KBS), 2024</div>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <li class="pub extra" data-topics="application">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="#">Transferrable Subject-Independent Feature Representation for Discriminating EEG-Based Brain Signals</a></div>
+          <div class="pub-authors">Haowei Lou, <strong>Zesheng Ye</strong>, Lina Yao</div>
+          <div class="pub-venue">Guidance, Navigation and Control (GNC), 2024</div>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <li class="pub extra" data-topics="prediction application">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://doi.org/10.1016/j.patcog.2023.109915">Self-supervised Cross-Modal Visual Retrieval from Brain Activity</a></div>
+          <div class="pub-authors"><strong>Zesheng Ye</strong>, Lina Yao, Yu Zhang, Sylvia Gustin</div>
+          <div class="pub-venue">Pattern Recognition (PR), 2024</div>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <li class="pub extra" data-topics="prediction application">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://arxiv.org/abs/2411.17361">Towards Robust Cross-Domain Recommendation with Joint Identifiability of User Preference</a></div>
+          <div class="pub-authors">Jing Du*, <strong>Zesheng Ye*</strong>, Bin Guo, Zhiwen Yu, Jia Wu, Jian Yang, Michael Sheng, Lina Yao</div>
+          <div class="pub-venue">Preprint, 2024</div>
+          <span class="pub-badge badge-preprint">Preprint</span>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <!-- === 2023 === -->
+
+      <li class="pub extra" data-topics="prediction application">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://ieeexplore.ieee.org/document/10415786/">Distributional Domain-Invariant Preference Matching for Cross-Domain Recommendation</a></div>
+          <div class="pub-authors">Jing Du*, <strong>Zesheng Ye*</strong>, Bin Guo, Zhiwen Yu, Lina Yao</div>
+          <div class="pub-venue">IEEE International Conference on Data Mining (ICDM), 2023</div>
+          <span class="pub-badge badge-oral">Oral</span>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <li class="pub extra" data-topics="prediction application">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3539597.3570373">IDNP: Interest Dynamics Modeling Using Generative Neural Processes for Sequential Recommendation</a></div>
+          <div class="pub-authors">Jing Du*, <strong>Zesheng Ye*</strong>, Bin Guo, Zhiwen Yu, Lina Yao</div>
+          <div class="pub-venue">ACM International Conference on Web Search and Data Mining (WSDM), 2023</div>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <li class="pub extra" data-topics="prediction">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://doi.org/10.1145/3583780.3614749">NP-SSL: A Modular and Extensible Self-supervised Learning Library with Neural Processes</a></div>
+          <div class="pub-authors"><strong>Zesheng Ye</strong>, Jing Du, Yao Liu, Yihong Zhang, Lina Yao</div>
+          <div class="pub-venue">ACM International Conference on Information and Knowledge Management (CIKM), 2023</div>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <li class="pub extra" data-topics="application">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://ieeexplore.ieee.org/document/10059195/">Less Is More: Brain Functional Connectivity Empowered Generalizable Intention Classification With Task-Relevant Channel Selection</a></div>
+          <div class="pub-authors">Haowei Lou, <strong>Zesheng Ye</strong>, Lina Yao, Yu Zhang</div>
+          <div class="pub-venue">IEEE Transactions on Neural Systems and Rehabilitation Engineering (TNSRE), 2023</div>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <li class="pub extra" data-topics="prediction">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://arxiv.org/abs/2303.13004">Adversarially Contrastive Estimation of Conditional Neural Processes</a></div>
+          <div class="pub-authors"><strong>Zesheng Ye</strong>, Jing Du, Lina Yao</div>
+          <div class="pub-venue">Preprint, 2023</div>
+          <span class="pub-badge badge-preprint">Preprint</span>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <!-- === 2022 === -->
+
+      <li class="pub" data-topics="prediction">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://openaccess.thecvf.com/content/CVPR2022/html/Ye_Contrastive_Conditional_Neural_Processes_CVPR_2022_paper.html">Contrastive Conditional Neural Processes</a></div>
+          <div class="pub-authors"><strong>Zesheng Ye</strong>, Lina Yao</div>
+          <div class="pub-venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022</div>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <li class="pub extra" data-topics="prediction application">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3477495.3531780">Socially-aware Dual Contrastive Learning for Cold-start Recommendation</a></div>
+          <div class="pub-authors">Jing Du, <strong>Zesheng Ye</strong>, Bin Guo, Zhiwen Yu, Lina Yao</div>
+          <div class="pub-venue">International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR), 2022</div>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+    </ul>
+
+    <div class="show-more-wrap">
+      <button class="btn-more" id="btn-more" onclick="toggleFullList()">
+        Show full publication list &#8595;
+      </button>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Selected Working Papers</h2>
+    <ul class="pub-list">
+
+      <li class="pub" data-topics="adaptation">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://arxiv.org/abs/2506.04650">Neural Network Reprogrammability: A Unified Theme on Model Reprogramming, Prompt Tuning, and Prompt Instruction</a></div>
+          <div class="pub-authors"><strong>Zesheng Ye*</strong>, Chengyi Cai*, Ruijiang Dong*, Jianzhong Qi, Lei Feng, Pin-Yu Chen, Feng Liu</div>
+          <div class="pub-venue">AAAI 2026 Tutorial</div>
+          <span class="pub-badge badge-preprint">Preprint</span>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <li class="pub" data-topics="evaluation">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://openreview.net/pdf?id=JEQaXgigtu">Combating Data Laundering in LLM Training</a></div>
+          <div class="pub-authors">Muxing Li*, <strong>Zesheng Ye*</strong>, Sharon Li, Feng Liu</div>
+          <div class="pub-venue">ICLR Data-FM Workshop, 2026</div>
+          <span class="pub-badge badge-workshop">Workshop</span>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+      <li class="pub" data-topics="evaluation">
+        <div class="pub-thumb-placeholder"></div>
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://arxiv.org/pdf/2502.02970">Distributional Statistics Restore Training Data Auditability in One-step Distilled Diffusion Models</a></div>
+          <div class="pub-authors">Muxing Li*, <strong>Zesheng Ye*</strong>, Sharon Li, Andy Song, Guangquan Zhang, Feng Liu</div>
+          <div class="pub-venue">ICML R2-FM Workshop, 2025</div>
+          <span class="pub-badge badge-workshop">Workshop</span>
+          <div class="pub-links"></div>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <footer>
+    <p>Last updated April 2026 &nbsp;·&nbsp; Design inspired by <a href="https://jonbarron.info" style="color:var(--faint)">Jon Barron</a></p>
+  </footer>
+
+</div>
+<script>
+  const allPubs   = Array.from(document.querySelectorAll('.pub'));
+  const extraPubs = allPubs.filter(p => p.classList.contains('extra'));
+  let activeTopic   = null;
+  let fullListShown = false;
+
+  document.querySelectorAll('.research-card').forEach(card => {
+    const t = card.dataset.topic;
+    card.addEventListener('click', () => { toggleDetail(t); filterTopic(card); });
+  });
+
+  function toggleDetail(topic) {
+    const body = document.getElementById('detail-' + topic);
+    if (!body) return;
+    const btn = body.previousElementSibling.querySelector('.btn-expand-detail');
+    if (body.style.display === 'none') {
+      body.style.display = 'block';
+      if (btn) btn.innerHTML = 'Show less \u2191';
+    } else {
+      body.style.display = 'none';
+      if (btn) btn.innerHTML = 'Read more \u2193';
+    }
+  }
+
+  function filterTopic(card) {
+    const topic = card.dataset.topic;
+    if (activeTopic === topic) { clearFilter(); return; }
+    activeTopic = topic;
+    document.querySelectorAll('.research-card').forEach(c => c.classList.remove('active'));
+    card.classList.add('active');
+    const extraMatch = extraPubs.filter(p => p.dataset.topics.split(' ').includes(topic));
+    if (extraMatch.length && !fullListShown) expandExtras();
+    applyDimming();
+    const total = allPubs.filter(p =>
+      p.dataset.topics.split(' ').includes(topic) &&
+      (!p.classList.contains('extra') || fullListShown)
+    ).length;
+    document.getElementById('filter-label').innerHTML =
+      `Showing <strong>${total}</strong> paper${total !== 1 ? 's' : ''} in <strong>${card.querySelector('h3').textContent}</strong>`;
+    document.getElementById('btn-clear').style.display = 'inline-block';
+    document.getElementById('publications').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function clearFilter() {
+    activeTopic = null;
+    document.querySelectorAll('.research-card').forEach(c => c.classList.remove('active'));
+    allPubs.forEach(p => p.classList.remove('dimmed'));
+    document.getElementById('filter-label').textContent =
+      fullListShown ? 'Showing all publications' : 'Showing selected publications';
+    document.getElementById('btn-clear').style.display = 'none';
+  }
+
+  function applyDimming() {
+    if (!activeTopic) { allPubs.forEach(p => p.classList.remove('dimmed')); return; }
+    allPubs.forEach(p => {
+      const visible = !p.classList.contains('extra') || fullListShown;
+      if (!visible) return;
+      p.classList.toggle('dimmed', !p.dataset.topics.split(' ').includes(activeTopic));
+    });
+  }
+
+  function toggleFullList() {
+    fullListShown ? collapseExtras() : expandExtras();
+  }
+
+  function expandExtras() {
+    fullListShown = true;
+    extraPubs.forEach(p => p.classList.add('visible'));
+    document.getElementById('btn-more').textContent = 'Show fewer publications \u2191';
+    if (!activeTopic)
+      document.getElementById('filter-label').textContent = 'Showing all publications';
+    applyDimming();
+  }
+
+  function collapseExtras() {
+    fullListShown = false;
+    extraPubs.forEach(p => { p.classList.remove('visible'); p.classList.remove('dimmed'); });
+    document.getElementById('btn-more').textContent = 'Show full publication list \u2193';
+    if (!activeTopic)
+      document.getElementById('filter-label').textContent = 'Showing selected publications';
+  }
+</script>
+</body>
+</html>
